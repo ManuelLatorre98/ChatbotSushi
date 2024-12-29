@@ -30,9 +30,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
   - **view_menu:** Se retorna el menú con todos los productos disponibles. Puede haber productos no disponibles que están en la BD, simulando que se encuentran agotados o que no se sirven ese día, estos no forman parte del menú.
   - **make_order:** El usuario hace un pedido. En caso que no se reconozcan “entidades” en la solicitud, se retorna un mensaje de que no se ha podido realizar la orden y que se debe seleccionar al menos un producto.
   
-  En caso de que se soliciten productos no disponibles en el menú, por más que se encuentren cargados en la BD, se retorna un mensaje a fin de que el usuario haga otro pedido diferente.
+- En caso de que se soliciten productos no disponibles en el menú, por más que se encuentren cargados en la BD, se retorna un mensaje a fin de que el usuario haga otro pedido diferente.
   
-  En caso de que esté todo correcto se le consulta al usuario si el chat interpretó bien el pedido, se retorna un mensaje de verificación junto con los platos y cantidades interpretadas para que las confirme el usuario.
+- En caso de que esté todo correcto se le consulta al usuario si el chat interpretó bien el pedido, se retorna un mensaje de verificación junto con los platos y cantidades interpretadas para que las confirme el usuario.
   - **cancel_order:** El usuario revisa lo interpretado por el chat y decide rechazarlo, el chat envía un mensaje confirmando que se canceló la orden y consulta si desea hacer otro pedido.
   - **confirm_order:** El usuario revisa lo interpretado por el chat y confirma que es correcto. El chat genera una orden, la guarda en la base de datos y retorna una copia junto con un mensaje de confirmación. Para simplificar el dominio, se identifica a los usuarios con un id de 6 digitos de la forma “IDxxxx”.
   - **unknown:** en caso de que no se logre entender al cliente se retorna un mensaje de disculpas indicando que se lo pudo entender

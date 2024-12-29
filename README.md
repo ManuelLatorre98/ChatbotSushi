@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 
 - Instalar Node y Typescript
-- Instalar dependencias con el comando “npm i”
+- Instalar dependencias con el comando “npm i” tanto para el directorio "backend" como el directorio "frontend"
 - **BACKEND:** Ir al folder "backend" para compilar ejecutar “npx tsc” y para ejecutar “node dist/app.js”. Ejecuta en el puerto 3000
 - **FRONTEND:** Ir al folder "frontend" ejecutar "npm run dev". Ejecuta en el puerto 4000
 - La base de datos Mongo la cree con el nombre “sushi”

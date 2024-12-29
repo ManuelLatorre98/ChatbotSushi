@@ -21,7 +21,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Para la creación del servidor use Express
 - Cómo ODM use Mongoose
 - Dado que lo que se plantea es la solicitud de información y un guardado de las órdenes, opte por definir un único endpoint POST para poder interactuar con el chat. En este, se procesa el mensaje del usuario, con la opción de mandar contexto previo, en lenguaje natural y se determina la “intención” a partir de estos. Además se obtienen las entidades, es decir los platos solicitados, en caso de que corresponda.
-- Utilizo POST ya que no expone los datos en la URL, permite manejar una mayor cantidad de datos en el body y deja claro que se pueden producir cambios en el estado interno del servidor
+- Utilizo POST ya que no expone los datos en la URL, permite manejar una mayor cantidad de datos en el body y deja claro que se pueden producir cambios en el estado interno del servidor. Direccion del endpoint http://localhost:3000/api/interact
 - A fin de simplificar los detalles como el horario de atención fueron definidos en la variable de entorno “ASK_FAQ”
   
 ## ERRORES

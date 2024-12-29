@@ -48,7 +48,17 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - **Message not recognized:** Envía un mensaje no reconocido por el chat
 
 ## MENSAJES DE EJEMPLO
+###Saludos y despedidas
+- Hola
+- Buenas
+- Adios
+- Chau
 
+## SOLICITUD DE MENU
+- Quiero el menú
+- Hola me das el menú
+- El menú profavor
+- 
 ### Pedido con productos no disponibles
 - Quiero pedir dos maki, un frushi, tres uramaki, cinco gunkan.
 - Quiero dos maki

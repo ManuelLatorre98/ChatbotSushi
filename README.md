@@ -3,16 +3,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## INSTALACION Y EJECUCION
 
 
-- Instalar Node y Typescript
-- Instalar dependencias con el comando “npm i” tanto para el directorio "backend" como el directorio "frontend"
-- **BACKEND:** Ir al folder "backend" para compilar ejecutar “npx tsc” y para ejecutar “node dist/app.js”. Ejecuta en el puerto 3000
-- **FRONTEND:** Ir al folder "frontend" ejecutar "npm run dev". Ejecuta en el puerto 4000
-- La base de datos Mongo la cree con el nombre “sushi”
-- El seed de precarga de la base de datos se ejecuta con el comando “npm run seed”. Este crea y carga con datos la BD. Revisar la variable de entorno “DB_CONN_STRING” para que coincida con la configuración de tu BD
-- Como modelo de NLP opte por usar la API  de google Gemini, se puede generar una API KEY en https://aistudio.google.com/app/apikey?hl=es-419
-- Dado que lo que se plantea es la solicitud de información y un guardado de las órdenes, opte por definir un único endpoint POST para poder interactuar con el chat. En este, se procesa el mensaje del usuario, con la opción de mandar contexto previo, en lenguaje natural y se determina la “intención” a partir de estos. Además se obtienen las entidades, es decir los platos solicitados, en caso de que corresponda.
-- Utilizo POST ya que no expone los datos en la URL, permite manejar una mayor cantidad de datos en el body y deja claro que se pueden producir cambios en el estado interno del servidor
-- A fin de simplificar los detalles como el horario de atención fueron definidos en la variable de entorno “ASK_FAQ”
+- Instalar Node y Typescript.
+- Instalar dependencias con el comando “npm i” tanto para el directorio "backend" como el directorio "frontend".
+- **BACKEND:** Ir al folder "backend" para compilar ejecutar “npx tsc” y para ejecutar “node dist/app.js”. Ejecuta en el puerto 3000.
+- **FRONTEND:** Ir al folder "frontend" ejecutar "npm run dev". Ejecuta en el puerto 4000.
+- La base de datos Mongo la cree con el nombre “sushi”.
+- El seed de precarga de la base de datos se ejecuta con el comando “npm run seed”. Este crea y carga con datos la BD. Revisar la variable de entorno “DB_CONN_STRING” para que coincida con la configuración de tu BD.
+- Como modelo de NLP opte por usar la API  de google Gemini, se puede generar una API KEY en https://aistudio.google.com/app/apikey?hl=es-419. Una vez obtenida pegarla en el .env del folder "backend", hay un archivo de ejemplo de todas las variables de entorno necesarias en "env.example"
+- Los test se ejecutan con "npm test".
+
 
 
 ## DETALLES DEL DESARROLLO
@@ -21,6 +20,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - Si bien el dominio es bastante sencillo, busque aplicar principios SOLID de forma tal que el código quede lo más comprensible, flexible, escalable y mantenible posible
 - Para la creación del servidor use Express
 - Cómo ODM use Mongoose
+- Dado que lo que se plantea es la solicitud de información y un guardado de las órdenes, opte por definir un único endpoint POST para poder interactuar con el chat. En este, se procesa el mensaje del usuario, con la opción de mandar contexto previo, en lenguaje natural y se determina la “intención” a partir de estos. Además se obtienen las entidades, es decir los platos solicitados, en caso de que corresponda.
+- Utilizo POST ya que no expone los datos en la URL, permite manejar una mayor cantidad de datos en el body y deja claro que se pueden producir cambios en el estado interno del servidor
+- A fin de simplificar los detalles como el horario de atención fueron definidos en la variable de entorno “ASK_FAQ”
   
 ## ERRORES
 - En caso de que se produzca un fallo en el servidor a nivel de base de datos o lógico siempre se retorna “Internal Server Error”

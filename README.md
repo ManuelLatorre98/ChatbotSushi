@@ -48,6 +48,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - **Message not recognized:** Envía un mensaje no reconocido por el chat
 
 ## MENSAJES DE EJEMPLO
+###PLATOS DISPONIBLES PARA PEDIR
+- Maki Roll
+- Uramaki
+- California Roll
+- Frushi (en base de datos pero no disponible en el menú, lo use para simular la situacion de que haya platos no disponibles o fuera del menú)
+  
 ###Saludos y despedidas
 - Hola
 - Buenas
